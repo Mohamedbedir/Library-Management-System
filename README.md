@@ -19,8 +19,9 @@ Properties: TransactionID, Book, User, BorrowDate, DueDate, ReturnDate, Fine, et
 Library: Manages the collection of books and users.
 Properties: Books, Users, Transactions, etc.
 Methods: AddBook(), RegisterUser(), SearchBook(), IssueBook(), ReturnBook(), etc.
-Relationships:
 
+
+Relationships:
 User and Book have a many-to-many relationship via BorrowTransaction.
 Admin and Librarian are specialized types of User (inheritance).
 Library acts as an aggregate root that manages the collection of Book and User objects.
